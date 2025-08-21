@@ -12,12 +12,13 @@ async function fetchProducts() {
 
 
 function createProducts({ id, title, price, description, category, image }){
-    return `
+     let shortDescription = description.slice(0, 100) + "...";
+    return  `
     <div class = "inner">
                     <p class = "id">id : ${id} </p>
                     <h2>title : ${title}</h2>
                     <p class = "price">price : ${price}</p>
-                    <p class= "des">description:${description}</p>
+                    <p class= "des">description:${shortDescription}</p>
                     <p class = "cat">category:${category}</p>
                     <img src="${image}" width="100"/>
                 </div>
