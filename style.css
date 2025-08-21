@@ -1,32 +1,31 @@
 .id{
-    font-size: 25;
+    font-size: 20px;
     font-weight: bolder;
 }
 .price{
-    font-size: 15;
+    font-size: 15px;
     font-weight: bold;
 }
 .cat{
-    font-size: 20;
+    font-size: 20px;
     font-weight: bold;
 }
 #main{
    display: grid;
     grid-template-columns: repeat(4, minmax(100px , 1fr));
-    gap: 10px;
+    gap: 25px;
     margin-top: 20px;
    overflow-x: hidden;
 }
  #main .inner{
     height: fit-content;
-    width: 400px;
+    width: 100%;
     border: 3px solid black;
     padding-left: 20px;
     margin-left: 20px;
     margin-top: 20px;
     border-radius: 5px;
 }
-.des{
+/* .des{
     max-height: 100px;
-  
-}
+   */
